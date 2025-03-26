@@ -15,7 +15,7 @@ let currentLocation = { lat: 2, lng: 2 };
 // Endpoint to receive GPS data
 app.post("/location", (req, res) => {
     const { lat, lng } = req.body;
-
+    console.log(lat, lng);
     if (!lat || !lng) return res.status(400).send("Invalid data");
 
     currentLocation = { lat, lng };
