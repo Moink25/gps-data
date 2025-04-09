@@ -10,7 +10,7 @@ const io = socketIo(server, { cors: { origin: "*" } });
 app.use(cors());
 app.use(express.json());
 
-let currentLocation = { lat: 2, lng: 2 };
+let currentLocation = { lat: 18.46434, lng: 73.86743 };
 
 // Endpoint to receive GPS data
 app.post("/location", (req, res) => {
